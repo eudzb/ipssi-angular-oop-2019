@@ -1,0 +1,8 @@
+<div *ngFor="let f of groups">
+  <span>Group: {{f.name}}</span>
+  <p>Musicien: </p>
+  <div *ngFor="let m of f.musicien">
+    <p>- {{m.name}} playing {{m.instrument}}</p>
+  </div>
+  <hr>
+</div>
