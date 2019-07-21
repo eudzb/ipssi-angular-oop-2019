@@ -1,8 +1,8 @@
-<div *ngFor="let f of groups">
-  <span>Group: {{f.name}}</span>
+<div *ngFor="let f of groups" class="container">
+  <span>Group: <b class="text-capitalize">{{f.name}}</b></span>
   <p>Musicien: </p>
   <div *ngFor="let m of f.musicien">
-    <p>- {{m.name}} playing {{m.instrument}}</p>
+    <p>- <b class="text-capitalize">{{m.name}}</b> playing {{m.instrument}}</p>
   </div>
   <hr>
 </div>
